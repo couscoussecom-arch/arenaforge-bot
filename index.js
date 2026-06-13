@@ -9,7 +9,7 @@ const fs   = require('fs');
 const path = require('path');
 
 // ─── CONFIG ────────────────────────────────────────────────
-const TOKEN     = 'TON_TOKEN_DISCORD_ICI';   // 👈 remplace ici
+const TOKEN = process.env.TOKEN;   // 👈 remplace ici
 const GAME_URL  = 'https://couscoussecom-arch.github.io/free/'; // 👈 lien vers ton jeu hébergé
 const DB_FILE   = path.join(__dirname, 'data', 'players.json');
 const PREFIX    = '!';
